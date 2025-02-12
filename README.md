@@ -1,5 +1,7 @@
 # MCP Server Starter
 
+[![smithery badge](https://smithery.ai/badge/@GreatAuk/mcp-weather)](https://smithery.ai/server/@GreatAuk/mcp-weather)
+
 A production-ready starter template for building Model Context Protocol (MCP) servers with TypeScript.
 
 ## 🚀 Quick Start
@@ -105,6 +107,14 @@ This project uses [standard-version](https://github.com/conventional-changelog/s
    npm publish
    ```
 Remember to update the version number using `bun run release` before publishing new versions.
+
+## Installing via Smithery
+
+To install Weather MCP Server Starter for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@GreatAuk/mcp-weather):
+
+```bash
+npx -y @smithery/cli install @GreatAuk/mcp-weather --client claude
+```
 
 ## Installing from npm (after publishing)
 
