@@ -3,7 +3,7 @@ import { someFunction } from "./index";
 
 describe("someFunction", () => {
   it("should return expected output", async () => {
-    const result = await someFunction({ name: "Test" });
+    const result = await someFunction({ name: "Test", address: { street: "123 Main St", zip: "12345" } });
     expect(result).toBe("Hello Test");
   });
 

@@ -11,7 +11,7 @@ export const someFunction = async (
 ): Promise<string> => {
   try {
     await asyncOperation(100); // Simulate async work
-    return `Hello ${args.name}`;
+    return `Hello ${args.name}， your address is ${JSON.stringify(args.address)} `;
   } catch (error) {
     console.error("Error in someFunction:", error);
     throw new Error(`Failed to process name: ${(error as Error).message}`);

@@ -28,7 +28,7 @@ if (args.length < expectedArgs.length) {
 // Initialize server
 const server = new Server(
   {
-    name: "MCP SERVER NAME",
+    name: "MCP Weather",
     version: VERSION,
   },
   {
@@ -42,7 +42,7 @@ const tools = createTools();
 
 // Register tools
 server.setRequestHandler(ListToolsRequestSchema, async () => ({
-  tools: tools.map(({ handler, ...tool }) => tool),
+  tools: tools.map(({ handler: _, ...tool }) => tool),
 }));
 
 // Register tool handlers
